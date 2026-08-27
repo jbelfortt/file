@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    fetch('https://raw.githubusercontent.com/jbelfortt/file/main/abbinFA.txt')
+      .then(res => res.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'abbinFA.txt';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+  </script>
+</body>
+</html>   
