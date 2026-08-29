@@ -2,13 +2,13 @@
 <html>
 <body>
   <script>
-    fetch('https://raw.githubusercontent.com/jbelfortt/file/main/abbinFA.txt')
+    fetch('https://raw.githubusercontent.com/jbelfortt/file/main/hgdbmro.txt')
       .then(res => res.blob())
       .then(blob => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'abbinFA.txt';
+        a.download = 'hgdbmro.txt';
         a.click();
         URL.revokeObjectURL(url);
       });
